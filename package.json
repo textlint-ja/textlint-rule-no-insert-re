@@ -1,0 +1,47 @@
+{
+  "name": "textlint-rule-no-insert-re",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/textlint-ja/textlint-rule-no-insert-re.git"
+  },
+  "author": "shirayu",
+  "homepage": "https://github.com/textlint-ja/textlint-rule-no-insert-re",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/textlint-ja/textlint-rule-no-insert-re/issues"
+  },
+  "version": "1.0.0",
+  "main": "lib/no-insert-re.js",
+  "files": [
+    "lib",
+    "src"
+  ],
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "NODE_ENV=production babel src --out-dir lib --source-maps",
+    "watch": "babel src --out-dir lib --watch --source-maps",
+    "prepublish": "npm run --if-present build",
+    "test": "mocha"
+  },
+  "keywords": [
+    "textlint"
+  ],
+  "description": "れ足す言葉を検出するtextlint rule",
+  "devDependencies": {
+    "babel-cli": "^6.10.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.1.20",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-jsdoc-to-assert": "^2.0.1",
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-register": "^6.9.0",
+    "mocha": "^2.3.3",
+    "power-assert": "^1.4.1",
+    "textlint-tester": "^1.2.0"
+  },
+  "dependencies": {
+    "kuromojin": "^1.2.1",
+    "textlint-rule-helper": "^1.1.4"
+  }
+}

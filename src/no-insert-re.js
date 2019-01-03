@@ -11,10 +11,6 @@ function isReruWord(token) {
     return token.pos == "動詞" && token.pos_detail_1 == "接尾" && token.basic_form == "れる";
 }
 
-function isKoreru(token) {
-    return token.pos == "動詞" && token.basic_form == "来れる";
-}
-
 module.exports = function(context) {
     const helper = new RuleHelper(context);
     let { Syntax, report, getSource, RuleError } = context;

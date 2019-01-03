@@ -7,7 +7,7 @@
 
 ## Installation
 
-    npm install textlint-rule-no-insert-re
+    npm install @textlint-ja/textlint-rule-no-insert-re
 
 textlint >= 5.0
 

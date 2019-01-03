@@ -1,5 +1,5 @@
 {
-  "name": "textlint-rule-no-insert-re",
+  "name": "@textlint-ja/textlint-rule-no-insert-re",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/textlint-ja/textlint-rule-no-insert-re.git"
@@ -39,6 +39,9 @@
     "mocha": "^2.3.3",
     "power-assert": "^1.4.1",
     "textlint-tester": "^1.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "kuromojin": "^1.2.1",

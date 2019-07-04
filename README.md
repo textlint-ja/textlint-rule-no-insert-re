@@ -13,12 +13,12 @@ textlint >= 5.0
 
 ## Usage
 
-Put no-insert-re" to `.textlintrc`
+Put "@textlint-ja/textlint-rule-no-insert-re" to `.textlintrc`
 
 ```js
 {
   "rules": {
-    "no-insert-re": true
+    "@textlint-ja/textlint-rule-no-insert-re": true
   }
 }
 ```

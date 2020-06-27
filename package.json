@@ -9,6 +9,8 @@
     },
     "description": "れ足す言葉を検出するtextlint rule",
     "devDependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.0",
         "power-assert": "^1.4.1",
         "prettier": "^1.15.3",
         "textlint-scripts": "^2.1.0"

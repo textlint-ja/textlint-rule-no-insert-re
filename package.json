@@ -1,63 +1,63 @@
 {
-  "name": "@textlint-ja/textlint-rule-no-insert-re",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/textlint-ja/textlint-rule-no-insert-re.git"
-  },
-  "author": "shirayu",
-  "homepage": "https://github.com/textlint-ja/textlint-rule-no-insert-re",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/textlint-ja/textlint-rule-no-insert-re/issues"
-  },
-  "version": "1.0.0",
-  "main": "lib/no-insert-re.js",
-  "files": [
-    "lib",
-    "src"
-  ],
-  "directories": {
-    "test": "test"
-  },
-  "scripts": {
-    "build": "textlint-scripts build",
-    "watch": "textlint-scripts build --watch",
-    "prepublish": "npm run --if-present build",
-    "test": "textlint-scripts test",
-    "husky": "^1.3.1",
-    "lint-staged": "^8.1.0",
-    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
-  },
-  "keywords": [
-    "textlint"
-  ],
-  "description": "れ足す言葉を検出するtextlint rule",
-  "devDependencies": {
-    "power-assert": "^1.4.1",
-    "prettier": "^1.15.3",
-    "textlint-scripts": "^2.1.0"
-  },
-  "publishConfig": {
-    "access": "public"
-  },
-  "dependencies": {
-    "kuromojin": "^1.2.1",
-    "textlint-rule-helper": "^1.1.4"
-  },
-  "prettier": {
-    "singleQuote": false,
-    "printWidth": 120,
-    "tabWidth": 4
-  },
-  "husky": {
-    "hooks": {
-      "precommit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx,css}": [
-      "prettier --write",
-      "git add"
-    ]
-  }
+    "author": "shirayu",
+    "bugs": {
+        "url": "https://github.com/textlint-ja/textlint-rule-no-insert-re/issues"
+    },
+    "dependencies": {
+        "kuromojin": "^1.2.1",
+        "textlint-rule-helper": "^1.1.4"
+    },
+    "description": "れ足す言葉を検出するtextlint rule",
+    "devDependencies": {
+        "power-assert": "^1.4.1",
+        "prettier": "^1.15.3",
+        "textlint-scripts": "^2.1.0"
+    },
+    "directories": {
+        "test": "test"
+    },
+    "files": [
+        "lib",
+        "src"
+    ],
+    "homepage": "https://github.com/textlint-ja/textlint-rule-no-insert-re",
+    "husky": {
+        "hooks": {
+            "precommit": "lint-staged"
+        }
+    },
+    "keywords": [
+        "textlint"
+    ],
+    "license": "MIT",
+    "lint-staged": {
+        "*.{js,jsx,ts,tsx,css}": [
+            "prettier --write",
+            "git add"
+        ]
+    },
+    "main": "lib/no-insert-re.js",
+    "name": "@textlint-ja/textlint-rule-no-insert-re",
+    "prettier": {
+        "printWidth": 120,
+        "singleQuote": false,
+        "tabWidth": 4
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/textlint-ja/textlint-rule-no-insert-re.git"
+    },
+    "scripts": {
+        "build": "textlint-scripts build",
+        "husky": "^1.3.1",
+        "lint-staged": "^8.1.0",
+        "prepublish": "npm run --if-present build",
+        "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
+        "test": "textlint-scripts test",
+        "watch": "textlint-scripts build --watch"
+    },
+    "version": "1.0.0"
 }

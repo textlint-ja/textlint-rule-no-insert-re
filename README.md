@@ -9,8 +9,6 @@
 
     npm install @textlint-ja/textlint-rule-no-insert-re
 
-textlint >= 5.0
-
 ## Usage
 
 Put "@textlint-ja/textlint-rule-no-insert-re" to `.textlintrc`
@@ -22,6 +20,11 @@ Put "@textlint-ja/textlint-rule-no-insert-re" to `.textlintrc`
   }
 }
 ```
+
+## Related
+
+- [textlint-rule-no-dropping-the-ra](https://github.com/textlint-ja/textlint-rule-no-dropping-the-ra)
+    - ら抜き言葉
 
 ## Contributing
 

@@ -1,7 +1,7 @@
 // LICENSE : MIT
 "use strict";
 import { RuleHelper } from "textlint-rule-helper";
-import kuromojin from "kuromojin";
+import { tokenize } from "kuromojin";
 
 function isTargetVerb(token) {
     return token.pos == "動詞" && token.conjugated_type == "一段";
@@ -20,7 +20,7 @@ module.exports = function(context) {
                 return;
             }
             let text = getSource(node);
-            return kuromojin(text).then(tokens => {
+            return tokenize(text).then(tokens => {
                 tokens.reduce((prev, current) => {
                     if (isTargetVerb(prev) && isReruWord(current)) {
                         report(

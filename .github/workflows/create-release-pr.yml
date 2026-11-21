@@ -117,8 +117,7 @@ jobs:
             --base "$BASE_BRANCH" \
             --head "release/v$VERSION" \
             --label "Type: Release" \
-            --assignee "$ACTOR" \
-            --draft
+            --assignee "$ACTOR"
         env:
           GH_TOKEN: ${{ github.token }}
           VERSION: ${{ steps.version.outputs.version }}

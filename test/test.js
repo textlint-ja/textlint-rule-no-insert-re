@@ -1,4 +1,3 @@
-import assert from "power-assert";
 import rule from "../src/no-insert-re";
 import TextLintTester from "textlint-tester";
 var tester = new TextLintTester();
